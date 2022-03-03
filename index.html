@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauranto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Restauranto</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kitchen">Кухня</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bar">Барная карта</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#inside">Атмосфера</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">Контакты</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-light" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Забронировать</button>
+            </form> 
+          </div> 
+        </div>
+      </nav>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.istockphoto.com/photos/pan-fried-duck-picture-id1081422898?b=1&k=20&m=1081422898&s=170667a&w=0&h=Ng5a5FU3zhnviVJbw64R4ehDyrRtb2KFvMZ1lOXm0hA=" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Уютный уголок в самом центре города</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/photos/restaurant-kitchen-crew-in-action-picture-id1277763706?b=1&k=20&m=1277763706&s=170667a&w=0&h=oFB9fgBOnyAH-0L4yMWlOj28kDDj6WbPzratZ4spP40=" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section id="kitchen"> 
+      <div class="album py-5">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://media.istockphoto.com/photos/dinner-picture-id185109733?b=1&k=20&m=185109733&s=170667a&w=0&h=PpPlmIKM3Vdn9cRFAsEV9yigpqPJ_jJ1BXE7iiyyxiA=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                <div class="card-body">
+                  <p class="card-text">Лосось в китайском имбирно-медовом соусе со свежими овощами</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            calories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">182 ккал</a></li>
+                        </ul>
+                      </div>
+                    <small class="text-muted">1590 ₽</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://media.istockphoto.com/photos/restaurant-plates-picture-id104704117?b=1&k=20&m=104704117&s=170667a&w=0&h=ey87ESdQq9Gv0r_hmTuVLpF9H1hb0S3xcOBVOSWcZiw=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                <div class="card-body">
+                  <p class="card-text">Филе миньон с кремом из белых грибов и печеными овощами</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            calories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">189 ккал</a></li>
+                        </ul>
+                      </div>
+                    <small class="text-muted">1690 ₽</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://media.istockphoto.com/photos/burger-picture-id692557700?b=1&k=20&m=692557700&s=170667a&w=0&h=XvOXD6L042aoFqOyBS88qMiyeg1pz2OtFP2LbnAYacE=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                <div class="card-body">
+                  <p class="card-text">Бургер с котлетой из мраморной говядины и картофелем фри</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            calories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">261 ккал</a></li>
+                        </ul>
+                      </div>
+                    <small class="text-muted">990 ₽</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                <div class="card-body">
+                  <p class="card-text">Куриная грудка с белым соусом и зеленым горошком</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            calories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">157 ккал</a></li>
+                        </ul>
+                      </div>
+                    <small class="text-muted">1090 ₽</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://media.istockphoto.com/photos/close-up-view-on-tasty-grilled-meat-with-vegetables-on-georgian-pita-picture-id1169521526?b=1&k=20&m=1169521526&s=170667a&w=0&h=oQ_hTGXK5Mdwn0o-EZilZi52LDV_tYeX1QVWpmJ3hgA=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                <div class="card-body">
+                  <p class="card-text">Говядина по-китайски в соусе из черного перца с овощами</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            calories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">215 ккал</a></li>
+                        </ul>
+                      </div>
+                    <small class="text-muted">2190 ₽</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1621852003739-b54d49ff3431?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                <div class="card-body">
+                  <p class="card-text">Баклажаны, обжаренные с чесноком и мятой</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            calories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">83 ккал</a></li>
+                        </ul>
+                      </div>
+                    <small class="text-muted">690 ₽</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://media.istockphoto.com/photos/homemade-pasta-picture-id488960908?b=1&k=20&m=488960908&s=170667a&w=0&h=EiCzz-uqn1SR_QI4jqn17ug_s3DhmJueNUkRl0qkmYs=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                <div class="card-body">
+                  <p class="card-text">Паста с говядиной, соусом демиглас и пармезаном</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            calories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">289 ккал</a></li>
+                        </ul>
+                      </div>
+                    <small class="text-muted">690 ₽</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://media.istockphoto.com/photos/freshly-baked-pizza-with-arugula-tomato-red-onion-and-mozzarella-picture-id1279000076?b=1&k=20&m=1279000076&s=170667a&w=0&h=jraPStqjiIwVNo17MArGsJu6cHK580YOOCtzZz1X7zI=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                <div class="card-body">
+                  <p class="card-text">Пицца с помидорами черри и козьим сыром</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            calories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">270 ккал</a></li>
+                        </ul>
+                      </div>
+                    <small class="text-muted">590 ₽</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://media.istockphoto.com/photos/southwestern-salad-picture-id1276642973?b=1&k=20&m=1276642973&s=170667a&w=0&h=Fkpq_0OAXXLNJmxiOFDdJGgOb1o_yJZvebWkfWhad9M=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                <div class="card-body">
+                  <p class="card-text">Теплый салат с уткой собственного копчения и авокадо</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            calories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">205 ккал</a></li>
+                        </ul>
+                      </div>
+                    <small class="text-muted">790 ₽</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <div class="ratio ratio-21x9">
+        <iframe src="https://storage.coverr.co/videos/8zzVsxRAA5klAJGSnK6rzYiBLYNO1Fqq?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjMyNjYzMDc3fQ.iVRPB_pDzLcx2pZ7L7go9gsPO1QBW37Z7Ly5jbczHjc" title="" allowfullscreen></iframe>
+      </div>
+
+      <section id="bar"> 
+        <div class="album py-5">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="https://media.istockphoto.com/photos/hand-making-three-cocktails-on-the-bar-picture-id1251673401?b=1&k=20&m=1251673401&s=170667a&w=0&h=KuL77rT0psBCaDP8BHTucBjPQEwFgBSdJVW2nd9E0MM=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+      
+                  <div class="card-body">
+                    <p class="card-text">Negroni</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="dropdown">
+                          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            Ingredients
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Джин Барристер</a></li>
+                            <li><a class="dropdown-item" href="#">Кампари</a></li>
+                            <li><a class="dropdown-item" href="#">Мартини россо</a></li>
+                          </ul>
+                        </div>
+                      <small class="text-muted">790 ₽</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="https://media.istockphoto.com/photos/bartender-adding-lemon-peel-in-a-drink-picture-id1281669483?b=1&k=20&m=1281669483&s=170667a&w=0&h=HANkqCXnKQbNriziz6SsXiCosbnJ5lX4wpK5IcG6uv4=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+      
+                  <div class="card-body">
+                    <p class="card-text">Cuba Libre</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="dropdown">
+                          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            Ingredients
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ром Бакарди</a></li>
+                            <li><a class="dropdown-item" href="#">Пепси</a></li>
+                            <li><a class="dropdown-item" href="#">Апельсин</a></li>
+                          </ul>
+                        </div>
+                      <small class="text-muted">690 ₽</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="https://media.istockphoto.com/photos/serving-drinks-for-new-years-party-picture-id1266799425?b=1&k=20&m=1266799425&s=170667a&w=0&h=0PBItOPFt7tRISYYiPUBINZHu5YeaXBZPiN8LtHMfTI=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+      
+                  <div class="card-body">
+                    <p class="card-text">Bellini </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="dropdown">
+                          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            Ingredients
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Игристое вино</a></li>
+                            <li><a class="dropdown-item" href="#">Пюре персиковое</a></li>
+                            <li><a class="dropdown-item" href="#">Сок лимона</a></li>
+                          </ul>
+                        </div>
+                      <small class="text-muted">890 ₽</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="https://media.istockphoto.com/photos/tropical-cocktails-near-swimming-pool-picture-id1167570076?b=1&k=20&m=1167570076&s=170667a&w=0&h=4xdmuMJZEogno1XLfrC4vkHPEs9H4E91DiDSvEtX9PI=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+      
+                  <div class="card-body">
+                    <p class="card-text">East Garden</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="dropdown">
+                          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            Ingredients
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Джин барристер</a></li>
+                            <li><a class="dropdown-item" href="#">Мартини Драй</a></li>
+                            <li><a class="dropdown-item" href="#">Саке</a></li>
+                            <li><a class="dropdown-item" href="#">Варенье из лепестков роз</a></li>
+                            <li><a class="dropdown-item" href="#">Сок лайма</a></li>
+                          </ul>
+                        </div>
+                      <small class="text-muted">1090 ₽</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="https://media.istockphoto.com/photos/closeup-on-hands-of-man-bartender-holding-glass-with-cold-drink-picture-id1311938515?b=1&k=20&m=1311938515&s=170667a&w=0&h=xtb2rZg9VPsJPkyqrige_shiQr9r-FFA-ja9GPhZr7A=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+      
+                  <div class="card-body">
+                    <p class="card-text">Sakyra Maru</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="dropdown">
+                          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            Ingredients
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Джин барристер</a></li>
+                            <li><a class="dropdown-item" href="#">Кашаса</a></li>
+                            <li><a class="dropdown-item" href="#">Персиковый ликёр</a></li>
+                            <li><a class="dropdown-item" href="#">Чойа</a></li>
+                            <li><a class="dropdown-item" href="#">Сок лайма</a></li>
+                          </ul>
+                        </div>
+                      <small class="text-muted">990 ₽</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="https://media.istockphoto.com/photos/glass-filled-with-mulled-wine-with-orange-slices-picture-id1273315646?b=1&k=20&m=1273315646&s=170667a&w=0&h=UYx4Mv9VeR1ONMpOmzSvgXGdyE73BwLsdsAunji4Uc8=" class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+      
+                  <div class="card-body">
+                    <p class="card-text">Глинтвейн</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="dropdown">
+                          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            Ingredients
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Вино красное сухое</a></li>
+                            <li><a class="dropdown-item" href="#">Цедра лимона и апельсина</a></li>
+                            <li><a class="dropdown-item" href="#">Корица, гвоздика</a></li>
+                            <li><a class="dropdown-item" href="#">Мед</a></li>
+                          </ul>
+                        </div>
+                      <small class="text-muted">490 ₽</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <section id="inside">
+          <div class="row featurette ms-5">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Уютный ресторан домашней кухни <br>
+                <br>
+                Интерьер заведения с деревянной отделкой и мягкой мебелью в чехлах с цветочным узором напоминает убранство загородного дома.</h2>
+            </div>
+            <div class="col-md-5">
+              <img src="https://images.unsplash.com/photo-1567667778211-b19f5a4e1efe?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="img-thumbnail" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+            </div>
+          </div>
+          <div class="row featurette ms-5">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">Стильный бар, в котором можно отлично отметить любое событие. <br>
+                <br>
+                Линейка напитков представлена авторскими коктейлями от топовых барменов и регулярно обновляется. </h2>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="img-thumbnail" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+            </div>
+          </div>
+      </section>
+
+      <div class="reserv container col-12 col-md text-center">
+        <h2 class="col">Ждем в гости!</h2>
+        <h3 class="col">В Restauranto стоит приезжать, даже если вы живете на другом конце города, в другом городе или другой стране!</h3>
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Restauranto@yandex.ru">Забронировать</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Напишите нам и мы Вам перезвоним!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Получатель</label>
+            <input type="text" class="form-control" id="recipient-name"> Restauranto@yandex.ru
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Укажите номер телефона</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <section id="location">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="col-12 col-md text-center">
+          <h1>Контакты</h1>
+          <ul class="list-unstyled text">
+            <li><a class="link-dark" href="#"><b>Москва, ул. Пятницкая, д. 36/2</b></a></li>
+            <li><a class="link-dark" href="tel:+79113627602"><b> +79113627602</b></a></li>
+            <li><a class="link-dark" href="mailto:Restauranto@yandex.ru"><b>Email: Restauranto@yandex.ru</b></a></li>
+          </ul>
+        </div>
+          <div class="row">
+            <div class="col-12 col-md text-center">
+              <a href="https://www.instagram.com/restinmsk/?hl=ru">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+                </a>
+                <a title="Whatsapp" href="whatsapp://send?phone=79113627602">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </footer>
+        <div class="row align-items-md-stretch">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1131.1515461443441!2d37.62789374783615!3d55.740658187977246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1632678359006!5m2!1sru!2sru" width="200" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </section>
+</body>
+</html>
+

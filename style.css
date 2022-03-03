@@ -1,0 +1,41 @@
+body {
+    background-image: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+.navbar, h1{
+    font-family: 'Lobster', cursive;
+}
+.card-text {
+    font-size: 20px ;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+.featurette-heading{
+    text-shadow: 2px 2px 5px white;
+}
+.align-items-md-stretch{
+    opacity: 0.5;
+}
+.align-items-md-stretch:hover {
+    opacity: 1.0;
+    filter: grayscale(70%);
+}
+.album{
+    font-family: 'Raleway', sans-serif;
+}
+.featurette{
+    font-family: 'Raleway', sans-serif;
+}
+.link-dark{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+.link-dark:hover{
+    color: white;
+}
+.reserv{
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 5px white;
+}
